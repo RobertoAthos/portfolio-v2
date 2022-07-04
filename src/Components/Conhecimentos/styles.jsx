@@ -4,7 +4,6 @@ export const Container = styled.section`
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  height: 100vh;
 
   section {
     margin-top: 7rem;
@@ -13,6 +12,7 @@ export const Container = styled.section`
     gap: 1.5rem;
     padding-bottom: 8rem;
     border-bottom: 3px solid #0EE7B7;
+    margin-bottom: 10rem;
     @media (max-width: 1000px) {
       gap: 1rem;
     }
