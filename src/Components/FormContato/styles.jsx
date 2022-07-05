@@ -12,32 +12,39 @@ export const FormContainer = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
-
-  > button {
+  justify-content:center;
+  align-items:center;
+    .send-btn{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+    }
+   .send-btn>button {
     border: none;
     padding: 1rem 2.5rem;
     color: #fff;
     font-weight: 300;
     font-size: 1.2rem;
     border-radius: 0.5rem;
-    background: ${({ theme }) => theme.primary};
+    background: #0EE7B7;
     transition: 0.5s;
-    width: fit-content;
+    width: 400px;
     &:disabled {
       opacity: 0.5;
     }
     &:not(:disabled):hover {
-      background: ${({ theme }) =>(0.05, theme.primary)};
+      background: #0EE7B7;
     }
   }
   @media (max-width: 700px) {
     margin-top: 5rem;
-    grid-template-columns: 1fr;
   }
   @media (max-width: 450px) {
     > button {
       padding: 0.8rem 1.5rem;
       font-size: 1rem;
+      width:300px;
     }
   }
 `;
@@ -45,19 +52,20 @@ export const FormContainer = styled.form`
 export const Input = styled.input`
   height: 3rem;
   width: 400px;
-  background: ${({ theme }) => theme.inputBackground};
-  border: 1px solid ${({ theme }) => theme.border};
+  background-color:#1E253E;
+  border:#313958;
   padding: 1.7rem 1.5rem;
-  color: ${({ theme }) => theme.primary};
+  color: #0EE7B7;
   border-radius: 0.5rem;
   font-size: 1.2rem;
   outline: none;
   transition: 0.5s;
+  margin: 15px;
   &:focus {
-    border-color: ${({ theme }) => theme.primary};
+    border-color:#0EE7B7;
   }
   &::placeholder {
-    color: ${({ theme }) => theme.primary};
+    color:#0EE7B7;
   }
   @media (max-width: 450px) {
     padding: 1.4rem;
@@ -68,20 +76,21 @@ export const Input = styled.input`
 export const TextArea = styled.textarea`
   height: 10rem;
   width: 400px;
-  background: ${({ theme }) => theme.inputBackground};
-  border: 1px solid ${({ theme }) => theme.border};
+  background: #1E253E;
+  border: 1px solid #313958;
   padding: 1.7rem 1.5rem;
-  color: ${({ theme }) => theme.primary};
+  color: #0EE7B7;
   border-radius: 0.5rem;
   font-size: 1.2rem;
   outline: none;
   transition: 0.5s;
   resize: none;
+  margin-bottom: 15px;
   &:focus {
-    border-color: ${({ theme }) => theme.primary};
+    border-color:#0EE7B7;
   }
   &::placeholder {
-    color: ${({ theme }) => theme.primary};
+    color: #0EE7B7;
   }
   @media (max-width: 450px) {
     padding: 1.4rem;
