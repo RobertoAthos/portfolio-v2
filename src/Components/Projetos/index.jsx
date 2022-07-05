@@ -4,8 +4,10 @@ import tesla from '../../Assets/tesla ui.png'
 import SectionTitle from '../../Components/SectionTitle'
 import {MainContainer} from './styles'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import { Navigation, Pagination, A11y } from 'swiper'
 import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 function index({title,desc,img}) {
   return (
@@ -13,12 +15,11 @@ function index({title,desc,img}) {
         <SectionTitle title="Projetos" description="landing pages, sistemas, etc"/>
         
     <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Navigation, Pagination, A11y]}
       spaceBetween={50}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
@@ -51,6 +52,10 @@ function index({title,desc,img}) {
               />  
       </SwiperSlide>
     </Swiper>
+
+    <div className='btn-project'>
+      <button>Ver mais Projetos</button>
+    </div>
    </MainContainer>
   )
 }

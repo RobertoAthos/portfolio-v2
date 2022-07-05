@@ -4,7 +4,8 @@ export const Container = styled.section`
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  height: 100vh;
+  margin-top:5rem;
+  margin-bottom: 7rem;
   display: flex;
   gap: 2rem;
   align-items: center;
