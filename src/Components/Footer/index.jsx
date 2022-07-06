@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-    AiOutlineTwitter,
     AiOutlineGithub,
     AiFillLinkedin
   } from 'react-icons/ai';
@@ -25,14 +24,11 @@ function index() {
           Voltar ao topo
         </button>
         <section>
-          <AiOutlineTwitter
-            onClick={() => handleRedirect('https://twitter.com')}
-          />
           <AiOutlineGithub
-            onClick={() => handleRedirect('https://github.com')}
+            onClick={() => handleRedirect('https://github.com/RobertoAthos')}
           />
           <AiFillLinkedin
-            onClick={() => handleRedirect('https://linkedin.com')}
+            onClick={() => handleRedirect('https://www.linkedin.com/in/roberto-athos-6a0a1517a/')}
           />
         </section>
       </div>

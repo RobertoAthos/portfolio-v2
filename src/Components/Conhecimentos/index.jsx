@@ -11,23 +11,17 @@ function index({title,year,description,description2,description3,description4}) 
 
       <section>
         <ConhecimentoCard
-          year="Front-End"
-          title="Linguas que eu falo"
-          description="Html"
-          description2="Css"
-          description3="Javascript"
-          description4="ReatJs"
+          title="Front-End"
+          description="A minha parte preferida de ser Dev, gosto do poder criar coisas que milhares ou até milhões de pessoas possam ver e interagir"
+
         />
         <ConhecimentoCard
-          year="Ux-Design"
-          title="Não sou nenhum especialista, mas sei me virar na hora de ser criativo com o design"
-          description="Figma"
+          title="Ux-Design"
+          description="Não sou nenhum especialista, mas sei me virar na hora de ser criativo com o design"
         />
         <ConhecimentoCard
-          year="Back-End"
-          title="Linguas que eu falo"
-          description="NodeJs"
-          description2="FireBase"
+          title="Back-End"
+          description="Apesar de preferir e seguir na carreira do front, também tenho conhecimentos mínimos do back end para construit aplicações completas"
         />
       </section>
     </Container>

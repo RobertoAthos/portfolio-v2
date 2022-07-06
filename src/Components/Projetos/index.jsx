@@ -1,17 +1,20 @@
 import React from 'react'
 import ProjetoItem from './ProjetoItem'
 import tesla from '../../Assets/tesla ui.png'
+import travel from '../../Assets/travel.png'
+import colegio from '../../Assets/colegio.png'
 import SectionTitle from '../../Components/SectionTitle'
 import {MainContainer} from './styles'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper'
+import {AiOutlineGithub} from 'react-icons/ai';
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 function index({title,desc,img}) {
   return (
-   <MainContainer>
+   <MainContainer id='Projetos'>
         <SectionTitle title="Projetos" description="landing pages, sistemas, etc"/>
         
     <Swiper
@@ -24,37 +27,30 @@ function index({title,desc,img}) {
       onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
-        <ProjetoItem
+       <ProjetoItem
+                title="Colégio Batista"
+                desc="-Landing Page"
+                img={colegio}
+              />
+      </SwiperSlide>
+      <SwiperSlide>
+            <ProjetoItem
+                title="Travel Agency"
+                desc="-Landing Page"
+                img={travel}
+              />
+      </SwiperSlide>
+      <SwiperSlide>
+      <ProjetoItem
             title="Tesla Ui Clone"
             desc="-WebApp"
             img={tesla}
           />
       </SwiperSlide>
-      <SwiperSlide>
-            <ProjetoItem
-                title="Tesla Ui Clone"
-                desc="-WebApp"
-                img={tesla}
-              />
-      </SwiperSlide>
-      <SwiperSlide>
-            <ProjetoItem
-                title="Tesla Ui Clone"
-                desc="-WebApp"
-                img={tesla}
-              />
-      </SwiperSlide>
-      <SwiperSlide>
-            <ProjetoItem
-                title="Tesla Ui Clone"
-                desc="-WebApp"
-                img={tesla}
-              />  
-      </SwiperSlide>
     </Swiper>
 
     <div className='btn-project'>
-      <button>Ver mais Projetos</button>
+      <button><a href='https://github.com/RobertoAthos'>Ver Mais Projetos</a><AiOutlineGithub/></button>
     </div>
    </MainContainer>
   )

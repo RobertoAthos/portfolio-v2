@@ -5,9 +5,9 @@ function index() {
   return (
     <Container>
     <ul>
-        <li id='active'>Home</li>
-        <li>Projetos</li>
-        <li>Contato</li>
+        <li><a href='/' id='active'>Home</a></li>
+        <li><a href='#projetos'>Projetos</a></li>
+        <li><a href='#contato'>Contato</a></li>
     </ul>
   </Container>
   )

@@ -11,7 +11,7 @@ export const Container = styled.section`
     justify-content: center;
     gap: 1.5rem;
     padding-bottom: 8rem;
-    border-bottom: 3px solid #0EE7B7;
+    border-bottom: 3px solid #A6A6A6;
     margin-bottom: 10rem;
     @media (max-width: 1000px) {
       gap: 1rem;
@@ -38,19 +38,13 @@ export const ItemContainer = styled.div`
     justify-content: flex-start;
     max-width: 19rem;
     transition: 0.5s;
-    h1 {
+    h2 {
       color: #0EE7B7;
       font-size: 2rem;
       margin-bottom: 1.5rem;
     }
-    h2 {
-      color: #7AC7E3;
-      font-size: 1.5rem;
-      font-weight: 300;
-      margin-bottom: 1rem;
-    }
     p {
-      color: #444B5B;
+      color: white;
       font-size: 1rem;
       font-weight: 300;
     }
@@ -70,9 +64,6 @@ export const ItemContainer = styled.div`
         font-size: 1.2rem;
         margin-bottom: 1rem;
       }
-      h2 {
-        font-size: 1rem;
-      }
       p {
         font-size: 0.9rem;
       }
@@ -91,9 +82,6 @@ export const ItemContainer = styled.div`
       max-width: 100%;
       h1 {
         font-size: 2rem;
-      }
-      h2 {
-        font-size: 1.5rem;
       }
       p {
         font-size: 1rem;

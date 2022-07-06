@@ -14,23 +14,17 @@ function Form() {
   
     function handleSubmit(event) {
       event.preventDefault();
-      
-  
       if (!nome || !email || !mensagem) {
-       alert('Preencha todos os campos para enviar sua mensagem!', {
-          style: {
-            background: theme.error,
-            color: '#fff'
-          }
-        });
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      }
-    }
+       alert('Preencha todos os campos para enviar sua mensagem!')
+          }else{
+            emailjs.sendForm('portfolio-gmail', 'portfolio', form.current, 'kc7ft4MqMDkvUdoFF')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+                }
+              }
   return (
     <FormContainer ref={form} onSubmit={handleSubmit}>
       <Input

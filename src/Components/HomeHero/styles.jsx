@@ -31,12 +31,12 @@ export const TextContainer = styled.section`
   width: 100%;
   h1 {
     font-size: 8rem;
-    color: #0EE7B7;
+    color: white;
   }
   h2 {
     font-size: 3rem;
     font-weight: 400;
-    color:#7AC7E3;
+    color:#A6A6A6;
   }
   @media (max-width: 1450px) {
     h1 {
@@ -99,7 +99,7 @@ export const CodeItem = styled.pre`
     color: #7ac7e3;
   }
   span.comment {
-    color: ${({ theme }) => theme.text};
+    color:#A6A6A6;
     margin-bottom: 1rem;
     display: block;
   }

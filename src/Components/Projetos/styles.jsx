@@ -6,8 +6,11 @@ export const MainContainer = styled.section`
         width: 100%;
         max-width: 1200px;
         margin: auto;
+        a{
+          color: white;
+        }
         .btn-project>button{
-          background-color:#0EE7B7 ;
+          background-color:#0d0f0f ;
           color: white;
           padding: 15px;
           border-radius: 20px;
@@ -16,7 +19,7 @@ export const MainContainer = styled.section`
           
         }
         .btn-project>button:hover{
-          background-color:#7AC7E3 ;
+          background-color:#000000 ;
           transition: 300ms;
         }
         .btn-project{
