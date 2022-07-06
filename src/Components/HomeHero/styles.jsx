@@ -14,7 +14,8 @@ export const Container = styled.section`
   flex:4;
  }
   .img-container{
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     margin-left: 5rem;
   }
 
@@ -22,6 +23,10 @@ export const Container = styled.section`
     flex-direction: column-reverse;
      div {
       width: 100%;
+    }
+    .img-container{
+      max-width: 320px;
+      margin-left: 0;
     }
   }
 `;
@@ -52,6 +57,11 @@ export const TextContainer = styled.section`
     }
     h2 {
       font-size: 1.5rem;
+    }
+    @media (max-width: 700px) {
+      h1,h2{
+        text-align: center;
+      }
     }
   }
 `;

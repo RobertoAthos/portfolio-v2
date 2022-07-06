@@ -6,10 +6,12 @@ import {SiMongodb,SiFirebase} from 'react-icons/si'
 import SectionTitle from '../SectionTitle';
 import { Container } from './styles';
 import TecnologiasItem from './TecnologiasItem';
+import Fade from 'react-reveal'
 
 function index({title,icon}) {
   return (
-    <Container>
+   <Fade right cascade>
+       <Container>
     <SectionTitle title="Tecnologias do meu cotidiano" />
     <section>
       <TecnologiasItem title="HTML" icon={<AiFillHtml5 />} />
@@ -24,6 +26,7 @@ function index({title,icon}) {
         <TecnologiasItem title="FireBase" icon={<SiFirebase/>}/>
     </section>
   </Container>
+   </Fade>
   )
 }
 export default index

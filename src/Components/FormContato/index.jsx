@@ -2,10 +2,12 @@ import React from 'react'
 import SectionTitle from '../SectionTitle';
 import Form from './Form';
 import { Container } from './styles';
+import Fade from 'react-reveal'
 
 function index() {
   return (
-    <Container id='Contato'>
+    <Fade bottom cascade>
+      <Container id='Contato'>
     <SectionTitle
       title={
         <>
@@ -25,6 +27,7 @@ function index() {
 
     <Form />
   </Container>
+    </Fade>
   )
 }
 

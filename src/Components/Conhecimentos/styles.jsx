@@ -18,6 +18,8 @@ export const Container = styled.section`
     }
     @media (max-width: 700px) {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin-top: 5rem;
       gap: 2rem;
     }
@@ -79,7 +81,9 @@ export const ItemContainer = styled.div`
     > div {
       height: auto;
       padding: 2rem;
-      max-width: 100%;
+      width: 100%;
+      justify-content:center;
+      align-items: center;
       h1 {
         font-size: 2rem;
       }

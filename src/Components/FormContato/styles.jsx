@@ -29,14 +29,12 @@ export const FormContainer = styled.form`
     border-radius: 0.5rem;
     background: #0EE7B7;
     transition: 0.5s;
-    width: 400px;
-    &:disabled {
-      opacity: 0.5;
+    width: 350px;
     }
-    &:not(:disabled):hover {
-      background: #0EE7B7;
+    .send-btn>button:hover{
+      background-color: #05af8a;
+      transition: 300ms;
     }
-  }
   @media (max-width: 700px) {
     margin-top: 5rem;
   }
@@ -51,7 +49,7 @@ export const FormContainer = styled.form`
 
 export const Input = styled.input`
   height: 3rem;
-  width: 400px;
+  width: 350px;
   background-color:#1E253E;
   border:#313958;
   padding: 1.7rem 1.5rem;
@@ -75,7 +73,7 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
   height: 10rem;
-  width: 400px;
+  width: 350px;
   background: #1E253E;
   border: 1px solid #313958;
   padding: 1.7rem 1.5rem;

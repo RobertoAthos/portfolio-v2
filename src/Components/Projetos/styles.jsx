@@ -10,13 +10,13 @@ export const MainContainer = styled.section`
           color: white;
         }
         .btn-project>button{
-          background-color:#0d0f0f ;
+          background-color:#121818 ;
           color: white;
           padding: 15px;
           border-radius: 20px;
           width: 250px;
           font-size: 1.5rem;
-          
+          border: none;
         }
         .btn-project>button:hover{
           background-color:#000000 ;
@@ -42,14 +42,12 @@ export const ContainerText = styled.div`
         position: absolute;
         width: 100%;
         height: 100%;
-        transition: 0.5s;
-      
+        transition: 0.5s; 
     .text {
       position: absolute;
       top: 10rem;
       right: 17rem;
       transition: 0.5s;
-      width: fit-content;
       background: rgba( 255, 255, 255, 0.4 );
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
       backdrop-filter: blur( 7.5px );
@@ -69,12 +67,43 @@ export const ContainerText = styled.div`
         text-shadow: -4px 5px 22px #11172b57;
       }
     }
+    @media (max-width:700px){
+      .text{
+          h2{
+            width:100%;
+            height: 100%;
+            font-size: 1.2rem;
+            text-align: center;
+            color: #0EE7B7;
+          }
+          p{
+            text-align: center;
+            color:#7AC7E3 ;
+          }
+        }
+    }
+       
 `
 export const ContainerImg = styled.div`
     img{
-        width: 900px;
+        width: 100%;
+        max-width: 900;
         height:500px;
         object-fit: cover;
+    }
+    @media(max-width:1000px){
+      img{
+        max-width: 500px;
+        height: 300px;
+      }
+      @media(max-width:700px){
+        max-width: 400px;
+        height: 280px;
+      }
+      @media(max-width:500px){
+        max-width: 320px;
+        height: 250px;
+      }
     }
     
 `

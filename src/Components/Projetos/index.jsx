@@ -11,10 +11,12 @@ import {AiOutlineGithub} from 'react-icons/ai';
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import Fade from 'react-reveal'
 
 function index({title,desc,img}) {
   return (
-   <MainContainer id='Projetos'>
+   <Fade left cascade>
+      <MainContainer id='Projetos'>
         <SectionTitle title="Projetos" description="landing pages, sistemas, etc"/>
         
     <Swiper
@@ -53,6 +55,7 @@ function index({title,desc,img}) {
       <button><a href='https://github.com/RobertoAthos'>Ver Mais Projetos</a><AiOutlineGithub/></button>
     </div>
    </MainContainer>
+   </Fade>
   )
 }
 

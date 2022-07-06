@@ -2,11 +2,12 @@ import React from 'react'
 import ConhecimentoCard from './ConhecimentoCard';
 import { Container } from './styles';
 import SectionTitle from '../SectionTitle';
-
+import Fade from 'react-reveal'
 
 function index({title,year,description,description2,description3,description4}) {
   return (
-    <Container>
+    <Fade bottom cascade>
+        <Container>
       <SectionTitle title="Conhecimento" description="2 anos de experiência" />
 
       <section>
@@ -25,6 +26,7 @@ function index({title,year,description,description2,description3,description4}) 
         />
       </section>
     </Container>
+    </Fade>
   )
 }
 

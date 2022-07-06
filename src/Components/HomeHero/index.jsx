@@ -1,10 +1,12 @@
 import React from 'react'
 import picture from '../../Assets/piccoding.svg'
 import { Container, TextContainer, InfosContainer, CodeItem } from './styles';
+import Fade from 'react-reveal'
 
 function index() {
   return (
-    <Container data-aos="fade-up">
+   <Fade bottom cascade>
+         <Container>
     <img src={picture} alt="Minha foto"  className='img-container'/>
     <div>
       <TextContainer>
@@ -21,19 +23,19 @@ function index() {
           <div>
             Sobrenome: <span className="blue">Athos</span>
           </div>
-          {'\u007D'}
         </CodeItem>
         <CodeItem data-aos="zoom-in">
           <span className="purple">Cargo</span> {'\u007B'}
           <div>
             Função: <span className="blue">Dev Front-end,</span>
           </div>
-          {'\u007D'}
         </CodeItem>
       </InfosContainer>
     </div>
   </Container>
+  </Fade>
   )
+   
 }
 
 export default index

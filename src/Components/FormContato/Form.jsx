@@ -19,7 +19,7 @@ function Form() {
           }else{
             emailjs.sendForm('portfolio-gmail', 'portfolio', form.current, 'kc7ft4MqMDkvUdoFF')
             .then((result) => {
-                console.log(result.text);
+                alert("Mensagem Enviada Com Sucesso");
             }, (error) => {
                 console.log(error.text);
             });
@@ -29,6 +29,7 @@ function Form() {
     <FormContainer ref={form} onSubmit={handleSubmit}>
       <Input
         placeholder="Nome"
+        type="text"
         value={nome}
         onChange={({ target }) => setNome(target.value)}
         name='user_name'
